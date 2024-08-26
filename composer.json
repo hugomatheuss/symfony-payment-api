@@ -15,9 +15,11 @@
         "symfony/dotenv": "7.1.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.1.*",
+        "symfony/http-client": "7.1.*",
         "symfony/runtime": "7.1.*",
         "symfony/security-bundle": "7.1.*",
-        "symfony/yaml": "7.1.*"
+        "symfony/yaml": "7.1.*",
+        "symfonycasts/reset-password-bundle": "^1.22"
     },
     "config": {
         "allow-plugins": {

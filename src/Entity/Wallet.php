@@ -6,6 +6,7 @@ use App\Repository\WalletRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: WalletRepository::class)]
+#[ORM\Table(name: 'wallet')]
 class Wallet
 {
     #[ORM\Id]
@@ -13,7 +14,7 @@ class Wallet
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\OneToOne(targetEntity: User::class, inversedBy: "wallets")]
+    #[ORM\OneToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(nullable: false)]
     private $user;
 
